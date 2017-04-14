@@ -54,6 +54,7 @@ if(!isset($_GET['login']) && isset($_GET['username']) && isset($_GET['password']
     }
 
     else{
+        echo $row['password'];
 
         echo 'Fail';
 
