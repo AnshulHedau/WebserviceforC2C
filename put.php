@@ -14,13 +14,13 @@ $dbname = "bloodbank";
 
 
 
-Create connection
+//Create connection
 
 $conn = new mysqli("$servername", $username, $password, $dbname);
 
 
 
-Check connection
+//Check connection
 
 if ($conn->connect_error) {
 
