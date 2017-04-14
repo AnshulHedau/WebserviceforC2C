@@ -39,19 +39,19 @@ $conn = new mysqli("$servername", $username, $password, $dbname);
 
 //Create table query
 
-//$sql = "CREATE TABLE admin (name VARCHAR(40) NOT NULL,username VARCHAR(40) NOT NULL, mobno VARCHAR(10) NOT NULL, email VARCHAR(40) NOT NULL ,Password VARCHAR(40) NOT NULL, IFSC VARCHAR(11) NOT NULL , accno VARCHAR(40) NOT NULL, PRIMARY KEY (UserName))";
+$sql = "CREATE TABLE admin (name VARCHAR(40) NOT NULL,username VARCHAR(40) NOT NULL, mobno VARCHAR(10) NOT NULL, email VARCHAR(40) NOT NULL ,Password VARCHAR(40) NOT NULL, IFSC VARCHAR(11), accno VARCHAR(40), PRIMARY KEY (UserName))";
 
 
 
-//if ($conn->query($sql) === TRUE) {
+if ($conn->query($sql) === TRUE) {
 
-//    echo "Table BloodBank created successfully!";} 
+    echo "Table BloodBank created successfully!";} 
 
-//else {
+else {
 
-//    echo "Error creating table: " . $conn->error;
+   echo "Error creating table: " . $conn->error;
 
-//}
+}
 
 
 
@@ -60,9 +60,8 @@ $conn = new mysqli("$servername", $username, $password, $dbname);
 //Sample URL call is : http://localhost/PHP_Tutorial/web_service.php?admin
 
 
-    $sql = "SELECT * FROM admin";
-
-
+  /*  $sql = "SELECT * FROM admin";
+    echo "Helo";
 
     $result = mysqli_query($conn ,$sql);
 
@@ -82,6 +81,6 @@ $conn = new mysqli("$servername", $username, $password, $dbname);
 
     echo json_encode($array);
 
-    mysqli_free_result($result);
+    mysqli_free_result($result);*/
 
 ?>
