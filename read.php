@@ -45,9 +45,9 @@ if(!isset($_GET['login']) && isset($_GET['username']) && isset($_GET['password']
     header('Content-Type:Application/json');
 
     
-    echo $row['password'];
+    //echo $row['password'];
     //echo $_GET['password'];
-    if($row['password'] == $_GET['password']){
+    if($row['password'] == str_replace("\"", "", $_GET['password'])){
 
         echo 'Success';
 
