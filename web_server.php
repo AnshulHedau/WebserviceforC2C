@@ -131,7 +131,7 @@ elseif(isset($_GET['type'])){
 
 elseif(!isset($_GET['login']) && isset($_GET['username']) && isset($_GET['password'])){
 
-    $sql = "SELECT Password FROM BloodBank WHERE UserName = " . $_GET['username'];
+    $sql = "SELECT Password FROM admin WHERE username = " . $_GET['username'];
 
     
 
@@ -143,7 +143,7 @@ elseif(!isset($_GET['login']) && isset($_GET['username']) && isset($_GET['passwo
 
     
 
-    if($row['Password'] == str_replace("\"", "", $_GET['password'])){
+    if($row['password'] == str_replace("\"", "", $_GET['password'])){
 
         echo 'Success';
 
@@ -165,7 +165,7 @@ elseif(!isset($_GET['login']) && isset($_GET['username']) && isset($_GET['passwo
 
 //Sample URL call is : http://localhost/PHP_Tutorial/web_service.php?bloodtype="B%2B"
 
-elseif(isset($_GET['bloodtype'])){
+/*elseif(isset($_GET['bloodtype'])){
 
     $sql = "SELECT * FROM BloodBank WHERE BloodType = " . $_GET['bloodtype'];
 
@@ -192,14 +192,14 @@ elseif(isset($_GET['bloodtype'])){
     mysqli_free_result($result);
 
 }
-
+*/
 
 
 //Getting the details of a user by validating his username and password
 
 //Sample URL call is: http://localhost/PHP_Tutorial/web_service.php?login=''&username='Dheeraj'&password='123'
 
-elseif(!isset($_GET['modify']) && isset($_GET['login']) && isset($_GET['username']) && isset($_GET['password'])){
+/*elseif(!isset($_GET['modify']) && isset($_GET['login']) && isset($_GET['username']) && isset($_GET['password'])){
 
     $sql = "SELECT * FROM BloodBank WHERE UserName = " . $_GET['username'] . " AND Password = " . $_GET['password'];
 
@@ -250,6 +250,7 @@ else{
     echo "Hi! No parameters have been passed :)";
 
 }
+*/
 
 $conn->close();
 
