@@ -23,22 +23,21 @@ $conn = new mysqli("$servername", $username, $password, $dbname);
 
 
 
-//Check connection
+Check connection
 
-//if ($conn->connect_error) {
+if ($conn->connect_error) {
 
-//    die("Connection failed: " . $conn->connect_error);
+    die("Connection failed: " . $conn->connect_error);
 
-//} 
+} 
 
 
 
-//echo "Connected successfully";
+echo "Connected successfully";
 
 
 
 //Create table query
-echo "Yes";
 $sql = "CREATE TABLE admin (name VARCHAR(40) NOT NULL,username VARCHAR(40) NOT NULL, mobno VARCHAR(10) NOT NULL, email VARCHAR(40) NOT NULL ,Password VARCHAR(40) NOT NULL, IFSC VARCHAR(11), accno VARCHAR(40), PRIMARY KEY (UserName))";
 
 
