@@ -42,7 +42,7 @@ $conn->query($sql);
 
 $sql = "CREATE TABLE admin (name VARCHAR(40) NOT NULL,username VARCHAR(40) NOT NULL, mobno VARCHAR(10) NOT NULL, email VARCHAR(40) NOT NULL ,Password VARCHAR(40) NOT NULL, IFSC VARCHAR(11) NOT NULL , accno VARCHAR(40) NOT NULL, PRIMARY KEY (UserName))";
 
-$sql1 = "Insert into admin values ('Anshul97','Anshul1','940459595',anshul.gmil.com','amshis','sbin1221','02289103')";
+$sql1 = "Insert into admin values ('Anshul','Anshul1','940459595',anshul.gmil.com','anshul','sbin1221','02289103')";
 
 
 
