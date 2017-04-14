@@ -46,7 +46,7 @@ if(!isset($_GET['login']) && isset($_GET['username']) && isset($_GET['password']
 
     
     echo $row['password'];
-    echo $_GET['password'];
+    //echo $_GET['password'];
     if($row['password'] == $_GET['password']){
 
         echo 'Success';
