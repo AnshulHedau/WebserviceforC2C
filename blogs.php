@@ -36,7 +36,7 @@ echo "Connected successfully";
 
 //Create table query
 
-$sql = "CREATE TABLE blogs (title VARCHAR(40) NOT NULL,author VARCHAR(40) NOT NULL, hashtags VARCHAR(10) NOT NULL, paymentType VARCHAR(40) NOT NULL ,price NUMBER(3) , description VARCHAR(120) NOT NULL , body VARCHAR(120) NOT NULL,viewers NUMBER(5),date VARCHAR(10),time VARCHAR(10), PRIMARY KEY (title))";
+$sql = "CREATE TABLE blogs (title VARCHAR(40) NOT NULL,author VARCHAR(40) NOT NULL, hashtags VARCHAR(10) NOT NULL, paymentType VARCHAR(40) NOT NULL ,price INT(3) , description VARCHAR(40) NOT NULL , body VARCHAR(80) NOT NULL,viewers INT(5),date VARCHAR(10),time VARCHAR(10), PRIMARY KEY (title))";
 
 
 
