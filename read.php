@@ -30,7 +30,7 @@ if ($conn->connect_error) {
 
 
 
-echo "Connected successfully";
+//echo "Connected successfully";
 
 if(!isset($_GET['login']) && isset($_GET['username']) && isset($_GET['password'])){
 
