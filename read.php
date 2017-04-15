@@ -4,13 +4,13 @@
 
 //Login details
 
-    $servername = "mysql4.gear.host";
+$servername = "mysql3.gear.host";
 
-    $username = "bloodbank";
+$username = "adminanshul";
 
-    $password = "Wk602y_N66F_";
+$password = "@123456";
 
-    $dbname = "bloodbank";
+$dbname = "softwaredb";
 
 
 
