@@ -49,7 +49,7 @@ if(!isset($_GET['login']) && isset($_GET['username']) && isset($_GET['password']
     //echo $_GET['password'];
     //if($row['password'] == str_replace("\"", "", $_GET['password'])){
     if(strcmp($row['password'] == $_GET['password'])==0){
-
+        echo $row['Password'];
         echo 'Success';
 
     }
