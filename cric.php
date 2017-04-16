@@ -3,7 +3,7 @@
 	</head>
 	<?php
 
-	$cricketMatchesTxt = file_get_contents('http://cricapi.com/api/cricket/?apikey=7dn28he8h2e72');	// change with your API key
+	$cricketMatchesTxt = file_get_contents('http://cricapi.com/api/cricket/?apikey=07WYdFc1qgOo5d9lpkE7x5fbSsp1');	// change with your API key
 	$cricketMatches = json_decode($cricketMatchesTxt);
 
     foreach($cricketMatches->data as $item) {
