@@ -4,5 +4,5 @@
 	$cricketMatches = json_decode($cricketMatchesTxt);
 
     foreach($cricketMatches->data as $item) {
-<?php echo($item->title); ?>
+php echo($item->title); 
 } ?>
